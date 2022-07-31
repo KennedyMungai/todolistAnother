@@ -16,9 +16,9 @@ const TodoList: React.FC<Props> = ({todos, setTodos, completedTodos, setcomplete
         <div className="container">
             <Droppable droppableId='TodosList'>
                 {
-                    (provided) => (
+                    (provided, snapshot) => (
                     <div 
-                        className="todos" 
+                        className={`todos ${snapshot.isDraggingOver ? `dragActive` : ``}`} 
                         ref={provided.innerRef}
                         {...provided.droppableProps}
                         >
