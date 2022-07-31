@@ -3,6 +3,7 @@ import './App.css';
 import InputField from './components/InputField';
 import TodoList from './components/TodoList';
 import { Todo } from './model';
+import { DragDropContext } from 'react-beautiful-dnd';
 
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
@@ -22,7 +23,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <DragDropContent>
+    <DragDropContext>
     <div className="App">
       <span className="heading">Todo List</span>
 
@@ -35,7 +36,7 @@ const App: React.FC = () => {
         setcompletedTodos={setcompletedTodos}
         />
     </div>
-    </DragDropContent>
+    </DragDropContext>
   );
 }
 
