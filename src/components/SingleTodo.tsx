@@ -27,7 +27,7 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
     }
 
     const handleEdit = (e: React.FormEvent, id: number) => {
-
+        e.preventDefault();
     }
 
     return (
