@@ -5,6 +5,8 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <span className="heading">Todo List</span>
+
+      <InputField />
     </div>
   );
 }
