@@ -20,8 +20,12 @@ const App: React.FC = () => {
     }
   };
 
+  const onDragEnd = () => {
+
+  }
+
   return (
-    <DragDropContext onDragEnd={() => {}}>
+    <DragDropContext onDragEnd={onDragEnd}>
     <div className="App">
       <span className="heading">Todo List</span>
 
