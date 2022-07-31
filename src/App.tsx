@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import InputField from './components/InputField';
 import { Todo } from './model';
