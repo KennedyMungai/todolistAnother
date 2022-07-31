@@ -1,8 +1,11 @@
 import React from 'react'
+import './styles.css'
 
 const TodoList: React.FC = () => {
     return (
-        <div>TodoList</div>
+        <div className='todos'>
+            
+        </div>
     )
 }
 
