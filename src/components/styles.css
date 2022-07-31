@@ -57,7 +57,6 @@
 .todos {
     display: flex;
     width: 47.5%;
-    flex-wrap: wrap;
 }
 
 .todos__single {
