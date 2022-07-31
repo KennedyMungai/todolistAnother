@@ -6,7 +6,7 @@ interface Props {
     setTodo: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const InputField = (todo, setTodo) => {
+const InputField = ({todo, setTodo}: Props) => {
     return (
         <form className="input">
             <input type="input" placeholder='Enter a task' className='input__box'/>
