@@ -2,7 +2,9 @@ import React from 'react'
 
 const InputField = () => {
     return (
-        <div>Input</div>
+        <form className="input">
+            <input type="input" placeholder='Enter a task' />
+        </form>
     )
 }
 
