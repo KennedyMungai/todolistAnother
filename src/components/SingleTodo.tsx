@@ -46,7 +46,7 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos, index}) => {
     
 
     return (
-        <Draggable draggableId={todo.id}>
+        <Draggable draggableId={todo.id.toString()}>
             <form
                 action=""
                 className="todos__single"
