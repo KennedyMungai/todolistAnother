@@ -19,6 +19,10 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
         )
     };
 
+    const handleDelete = () => {
+        
+    }
+
     return (
         <form action="" className="todos__single">
 
