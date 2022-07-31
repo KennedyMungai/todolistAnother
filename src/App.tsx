@@ -22,6 +22,7 @@ const App: React.FC = () => {
   };
 
   return (
+    <DragDropContent>
     <div className="App">
       <span className="heading">Todo List</span>
 
@@ -34,6 +35,7 @@ const App: React.FC = () => {
         setcompletedTodos={setcompletedTodos}
         />
     </div>
+    </DragDropContent>
   );
 }
 
