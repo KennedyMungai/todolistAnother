@@ -1,6 +1,6 @@
 import React from 'react'
 import { Todo } from '../model';
-import { AiFillEdit } from 'react-icons/ai';
+import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
 
 interface Props {
     todo: Todo;
@@ -19,7 +19,9 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
                 <span className="icon">
                     <AiFillEdit />
                 </span>
-                <span className="icon"></span>
+                <span className="icon">
+                    <AiFillDelete />
+                </span>
                 <span className="icon"></span>
             </div>
         </form>
