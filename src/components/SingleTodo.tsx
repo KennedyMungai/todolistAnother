@@ -55,6 +55,7 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos, index}) => {
                         onSubmit={(e) => handleEdit(e, todo.id)}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
+                        ref={provided.innerRef}
                         >
 
                         {
