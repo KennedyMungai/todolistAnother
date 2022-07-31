@@ -31,7 +31,9 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
 
         setTodos(todos.map((todo) => (
             todo.id === id ? {...todo, todo:editTodo}: todo
-        )))
+        )));
+
+        setEdit(false);
     }
 
     return (
