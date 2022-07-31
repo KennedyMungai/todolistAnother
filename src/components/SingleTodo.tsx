@@ -27,7 +27,7 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
     }
 
     return (
-        <form action="" className="todos__single">
+        <form action="" className="todos__single" onSubmit={(e) => handleEdit(e, todo.id)}>
 
             {
                 edit ? (
