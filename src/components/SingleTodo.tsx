@@ -11,6 +11,10 @@ interface Props {
 }
 
 const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
+    const handleDone = (id: number) => {
+        
+    }
+
     return (
         <form action="" className="todos__single">
             <span className="todos__single--text">
