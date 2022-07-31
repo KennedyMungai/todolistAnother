@@ -9,8 +9,8 @@ const App: React.FC = () => {
 
   console.log(todo);
 
-  const handleAdd = () => {
-
+  const handleAdd = (e) => {
+    e.PreventDefault();
   };
 
   return (
