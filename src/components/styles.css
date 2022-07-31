@@ -122,3 +122,7 @@
         width: 45%;
     }
 }
+
+.remove {
+    background-color: rgb(243, 116, 141);
+}
