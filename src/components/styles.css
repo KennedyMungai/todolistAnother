@@ -114,10 +114,3 @@
         width: 100%;
     }
 }
-
-@media (max-width: 1200px) {
-    .todos__single {
-        width: 40%;
-    }
-}
-
