@@ -5,7 +5,7 @@ import { Todo } from './model';
 
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
-  const [todos, setTodos] = useState<Todo>([]);
+  const [todos, setTodos] = useState<Todo[]>([]);
 
   console.log(todo);
 
