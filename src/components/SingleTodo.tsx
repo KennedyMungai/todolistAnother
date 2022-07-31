@@ -9,7 +9,11 @@ interface Props {
 
 const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
     return (
-        <div>SingleTodo</div>
+        <form action="" className="todos__single">
+            <span className="todos__single--text">
+                {todo.todo}
+            </span>
+        </form>
     )
 }
 
