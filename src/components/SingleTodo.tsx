@@ -8,6 +8,7 @@ interface Props {
     todo: Todo;
     todos: Todo[];
     setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+    index: number;
 }
 
 const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
