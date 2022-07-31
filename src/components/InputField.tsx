@@ -4,6 +4,7 @@ import './styles.css'
 interface Props {
     todo: string;
     setTodo: React.Dispatch<React.SetStateAction<string>>;
+    handleAdd: () => void;
 }
 
 const InputField: React.FC<Props> = ({todo, setTodo}) => {
