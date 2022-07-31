@@ -30,23 +30,26 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
         <form action="" className="todos__single">
 
             {
-                todo.isDone ? (
-                    <s className="todos__single--text">
-                        {todo.todo}
-                    </s>
+                edit ? (
+                    <input />
                 ) : (
-                    <span className="todos__single--text">
-                        {todo.todo}
-                    </span>
+                    todo.isDone ? (
+                        <s className="todos__single--text">
+                            {todo.todo}
+                        </s>
+                    ) : (
+                        <span className="todos__single--text">
+                            {todo.todo}
+                        </span>
+                    )
                 )
             }
-
 
             <div className="">
                 <span className="icon" onClick={() => {
                     if(!edit && !todo.isDone)
                     {
-                        setEdit(!edit)
+                        setEdit(!edit);
                     }
                 }}>
                     <AiFillEdit />
