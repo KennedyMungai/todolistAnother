@@ -18,6 +18,7 @@ const InputField: React.FC<Props> = ({todo, setTodo, handleAdd}) => {
                 className='input__box'
                 value={todo}
                 onChange={(e) => setTodo(e.target.value)}
+                ref={inputRef}
                 />
 
             <button className="input__submit" type='submit'>Go</button>
