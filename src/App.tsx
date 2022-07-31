@@ -3,7 +3,7 @@ import './App.css';
 import InputField from './components/InputField';
 import TodoList from './components/TodoList';
 import { Todo } from './model';
-import { DragDropContext } from 'react-beautiful-dnd';
+import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
@@ -20,7 +20,7 @@ const App: React.FC = () => {
     }
   };
 
-  const onDragEnd = () => {
+  const onDragEnd = (result: DropResult) => {
 
   }
 
