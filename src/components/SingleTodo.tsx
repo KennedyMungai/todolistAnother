@@ -26,8 +26,8 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
         setTodos(todos.filter((todo)=> todo.id !== id));
     }
 
-    const handleEdit = () => {
-        
+    const handleEdit = (e: React.FormEvent, id: number) => {
+
     }
 
     return (
