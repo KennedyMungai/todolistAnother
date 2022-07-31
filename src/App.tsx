@@ -10,8 +10,6 @@ const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [completedTodos, setcompletedTodos] = useState<Todo[]>([])
 
-  console.log(todos);
-
   const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
 
