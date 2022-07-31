@@ -26,6 +26,10 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
         setTodos(todos.filter((todo)=> todo.id !== id));
     }
 
+    const handleEdit = () => {
+        
+    }
+
     return (
         <form action="" className="todos__single" onSubmit={(e) => handleEdit(e, todo.id)}>
 
