@@ -108,10 +108,7 @@
 
     .todos {
         width: 95%;
-    }
-
-    .todos__single {
-        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
