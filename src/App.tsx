@@ -9,11 +9,15 @@ const App: React.FC = () => {
 
   console.log(todo);
 
+  const handleAdd = () => {
+
+  };
+
   return (
     <div className="App">
       <span className="heading">Todo List</span>
 
-      <InputField todo={todo} setTodo={setTodo}/>
+      <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
     </div>
   );
 }
