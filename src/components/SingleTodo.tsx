@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SingleTodo = () => {
+const SingleTodo = ({todo, todos, setTodos}) => {
     return (
         <div>SingleTodo</div>
     )
