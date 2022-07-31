@@ -57,6 +57,10 @@
 .todos {
     display: flex;
     width: 47.5%;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: aquamarine;
 }
 
 .todos__single {
