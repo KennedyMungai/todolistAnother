@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import './App.css';
 import InputField from './components/InputField';
 import { Todo } from './model';
@@ -9,8 +9,8 @@ const App: React.FC = () => {
 
   console.log(todo);
 
-  const handleAdd = (e) => {
-    e.PreventDefault();
+  const handleAdd = (e:ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
   };
 
   return (
