@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   console.log(todo);
 
-  const handleAdd = (e:ChangeEvent<HTMLInputElement>) => {
+  const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
   };
 
