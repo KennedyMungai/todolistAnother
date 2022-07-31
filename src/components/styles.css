@@ -19,3 +19,18 @@
     box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
     outline: none;
 }
+
+.input__submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color: coral;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
