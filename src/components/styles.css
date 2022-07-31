@@ -60,7 +60,7 @@
     flex-direction: column;
     padding: 15px;
     border-radius: 5px;
-    background-color: aquamarine;
+    background-color: rgb(103, 221, 221);
 }
 
 .todos__single {
