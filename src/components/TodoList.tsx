@@ -37,6 +37,7 @@ const TodoList: React.FC<Props> = ({todos, setTodos, completedTodos, setcomplete
                                 />
                             ))
                         }
+                        {provided.placeholder}
                     </div>
                     )
                 }
@@ -63,6 +64,7 @@ const TodoList: React.FC<Props> = ({todos, setTodos, completedTodos, setcomplete
                                     />
                                 ))
                             }
+                        {provided.placeholder}
                         </div>
                     )
                 }
