@@ -31,7 +31,7 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
 
             {
                 edit ? (
-                    <input />
+                    <input value={editTodo} />
                 ) : (
                     todo.isDone ? (
                         <s className="todos__single--text">
