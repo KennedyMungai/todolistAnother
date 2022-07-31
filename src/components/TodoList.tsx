@@ -52,12 +52,12 @@ const TodoList: React.FC<Props> = ({todos, setTodos, completedTodos, setcomplete
                                 Completed Tasks
                             </span>
                             {
-                                todos.map(todo => (
+                                completedTodos.map(todo => (
                                     <SingleTodo
                                         todo={todo}
                                         key={todo.id}
-                                        todos={todos}
-                                        setTodos={setTodos}
+                                        todos={completedTodos}
+                                        setTodos={setcompletedTodos}
                                     />
                                 ))
                             }
